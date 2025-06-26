@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1750833407112,
+      "tag": "0000_exotic_slipstream",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1750912301627,
+      "tag": "0001_ancient_the_captain",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1750932652341,
+      "tag": "0002_shocking_marten_broadcloak",
+      "breakpoints": true
+    }
+  ]
+}
