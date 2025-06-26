@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hook/useOutsideClick";
@@ -26,7 +25,6 @@ export default function TaskManagementCards({
   taskGroups: TaskGroup[];
 }) {
   const [active, setActive] = useState<TaskGroup | null>(null);
-  // Initialize localTaskGroups with the prop, and update it when prop changes
   const [localTaskGroups, setLocalTaskGroups] =
     useState<TaskGroup[]>(taskGroups);
   const [editingTask, setEditingTask] = useState<number | null>(null);
@@ -35,7 +33,7 @@ export default function TaskManagementCards({
   const id = useId();
 
   useEffect(() => {
-    setLocalTaskGroups(taskGroups); // Keep local state in sync with prop
+    setLocalTaskGroups(taskGroups); 
   }, [taskGroups]);
 
   useEffect(() => {
@@ -345,18 +343,14 @@ export default function TaskManagementCards({
           </div>
         ) : null}
       </AnimatePresence>
-
-      {/* Main container for the cards themselves (the scrollable strip) */}
-      {/* We need this to fill the parent's height (the black box) and manage its own scrolling */}
-      <div className="h-full flex overflow-x-auto gap-6 p-4 hide-scrollbar">
-        {" "}
-        {/* Added h-full and removed individual card padding here */}
+      <div className="h-full flex overflow-x-auto gap-6 p-4 ">
+    
         {localTaskGroups.map((group) => (
           <motion.div
             layoutId={`card-${group.heading}-${id}`}
             key={`card-${group.heading}-${id}`}
             onClick={() => setActive(group)}
-            // Adjusted width for consistency, flex-shrink-0 to ensure they don't shrink
+   
             className="p-4 rounded-xl border-gray-50 border-r border-b cursor-pointer transition-all duration-200 flex-shrink-0 w-[300px] h-[calc(100%-1rem)] relative" // Added h-[calc(100%-1rem)] for height and relative positioning
           >
             <div className="flex justify-between items-start">

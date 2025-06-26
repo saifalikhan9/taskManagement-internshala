@@ -8,6 +8,7 @@ import Image from "next/image";
 import img from "../public/reading.png";
 import Idea from "../public/meditating.png";
 
+
 // Import the TaskManagementCards component
 import TaskManagementCards from "./TaskManagementCard"; // Adjust the path as needed
 
@@ -65,11 +66,11 @@ const NewDashBoard = ({
         tag: moduleData.tag,
         tasks: moduleData.tasks.map(
           (task: { text: string; completed: boolean; id: number }) => ({
-            id: task.id, // Temporary client-side ID. Use a robust ID generation in production.
+            id: task.id, 
             text: task.text,
             completed: task.completed,
             moduleId:
-              moduleData.moduleId || Math.floor(Math.random() * 1000) + 1, // Ensure moduleId exists
+              moduleData.moduleId 
           })
         ),
       };
@@ -116,9 +117,9 @@ const NewDashBoard = ({
   return (
     <div className="w-full min-h-screen ">
       <div className="flex flex-col items-center justify-center p-5 space-y-10 ">
-        {/* Left section: Task Generator */}
+
         <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl min-h-[25rem] p-10 rounded-[2.5rem] bg-gray-200 shadow-md">
-          {/* Left Side */}
+
           <div className="flex flex-col gap-6 w-full md:w-1/2">
             <div className="flex items-center gap-3 text-3xl font-bold">
               <Sparkles className="h-6 w-6 text-blue-600" />
@@ -157,7 +158,7 @@ const NewDashBoard = ({
             </div>
           </div>
 
-          {/* Right Side - Image */}
+ 
           <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
             <Image
               src={img}
@@ -167,9 +168,9 @@ const NewDashBoard = ({
           </div>
         </div>
 
-        {/* Section below the generator */}
+   
         <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 w-full max-w-7xl">
-          {/* Left half: Generated Tasks Display */}
+    
           <div className="w-full md:w-1/2 min-h-[300px] bg-gradient-to-br from-[#fe7de9] to-[#edfe4d] rounded-4xl p-6 overflow-y-auto hide-scrollbar">
             <h2 className="text-black text-center font-bold text-2xl mb-4">
               GENERATED TASKS WILL APPEAR HERE
@@ -203,27 +204,27 @@ const NewDashBoard = ({
             )}
           </div>
 
-          {/* Right half: Black box to show TaskManagementCards - now styled as a card */}
+     
           <div className="w-full md:w-1/2 min-h-[300px] bg-black text-white rounded-4xl shadow-xl flex flex-col p-4">
             {" "}
-            {/* Added flex flex-col, removed min-h, fixed height */}
+         
             <h1 className="text-4xl font-bold mb-4 text-center">
               Your Task Modules
             </h1>{" "}
-            {/* Added a proper title */}
-            <div className="flex-1 overflow-x-auto hide-scrollbar">
-              {" "}
-              {/* This div will take remaining height and handle horizontal scroll */}
+      
+            <div className="flex-1 overflow-x-auto ">
+          
+     
               {displayTaskGroups.length > 0 ? (
                 <TaskManagementCards taskGroups={displayTaskGroups} />
               ) : (
                 <p className="text-gray-400 text-lg text-center flex-grow flex items-center justify-center">
-                  {" "}
-                  {/* Added flex-grow and centering */}
+              
                   Your generated modules will appear as cards here.
                 </p>
               )}
             </div>
+           
           </div>
         </div>
       </div>

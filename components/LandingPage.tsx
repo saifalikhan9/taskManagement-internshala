@@ -11,7 +11,7 @@ function LandingPage() {
   return (
     <div className="w-full min-h-screen">
       <div className="flex overflow-hidden h-160 p-10">
-        {/* Left Section (Text) */}
+      
         <div className="w-1/2 flex flex-col items-center justify-center bg-[#1a1a1a] rounded-l-[8rem] text-white text-center px-6 ">
           <p className="text-3xl mb-1">Unlock Your Potential with</p>
           <span className="text-white text-2xl font-bold mb-2">
@@ -41,13 +41,13 @@ function LandingPage() {
           )}
         </div>
 
-        {/* Right Section (Image) */}
+
         <div className="w-1/2 flex items-center justify-center bg-gradient-to-br from-[#fe7de9] to-[#edfe4d] rounded-r-[8rem]">
           <Image
             width={500}
             src={heroImage}
             alt="hero"
-            className="scale-x-[-1]" // 🔄 Mirror flip
+            className="scale-x-[-1]" 
           />
         </div>
       </div>
