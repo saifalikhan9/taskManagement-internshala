@@ -4,7 +4,7 @@ This project is a full-stack web application that allows users to generate and m
 
 ## 🚀 Live Demo
 
- [https://your-netlify-url.netlify.app]([https://your-netlify-url.netlify.app](https://task-management-internshala.vercel.app/))  
+ (https://task-management-internshala.vercel.app/)
  
 ---
 
