@@ -4,7 +4,7 @@ This project is a full-stack web application that allows users to generate and m
 
 ## 🚀 Live Demo
 
- (https://task-management-internshala.vercel.app/)
+ [LINK:-](https://task-management-internshala.vercel.app/)
  
 ---
 
@@ -43,5 +43,5 @@ This project is a full-stack web application that allows users to generate and m
 ### 1. Clone the repository
 
 ```bash
-git clone (https://github.com/saifalikhan9/taskManagement-internshala)
+git clone https://github.com/saifalikhan9/taskManagement-internshala
 cd ai-task-manager
