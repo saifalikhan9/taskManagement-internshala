@@ -4,7 +4,7 @@ This project is a full-stack web application that allows users to generate and m
 
 ## 🚀 Live Demo
 
- [https://your-netlify-url.netlify.app](https://your-netlify-url.netlify.app)  
+ [https://your-netlify-url.netlify.app]([https://your-netlify-url.netlify.app](https://task-management-internshala.vercel.app/))  
  
 ---
 
@@ -43,5 +43,5 @@ This project is a full-stack web application that allows users to generate and m
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-task-manager.git
+git clone[ https://github.com/your-username/ai-task-manager.git](https://github.com/saifalikhan9/taskManagement-internshala)
 cd ai-task-manager
